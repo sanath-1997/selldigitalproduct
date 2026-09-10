@@ -8,15 +8,15 @@
 (function() {
   try {
     // localStorage stores as string, so check "40"
-    const val = localStorage.getItem('digitalproduct');
+    const val = localStorage.getItem('selldigitalproduct');
     
     // If not exactly 40, redirect
     if (val !== '40') {
-      window.location.replace("https://www.google.com");
+      window.location.replace("https://www.selldigitalproduct.vercel.app");
     }
   } catch (e) {
     // If localStorage is blocked, also redirect
-    window.location.replace("https://www.google.com");
+    window.location.replace("https://www.selldigitalproduct.vercel.app");
   }
 })(); 
 </script>

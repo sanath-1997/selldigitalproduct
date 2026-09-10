@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Products - Complete Guide</title>
+<title>Digital Products - Complete Guide | PDF Edition</title>
 <script> 
 (function() {
   try {
@@ -20,85 +20,188 @@
   }
 })();  
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@700;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#111115; --muted:#5e5e6e; --line:#ececf0; --bg:#ffffff;
-  --a1:#6366f1; --a2:#06b6d4; --a3:#f59e0b; --a4:#ec4899; --a5:#10b981;
-  --radius:20px;
+  --ink:#1a1a2e; --muted:#6b7280; --line:#e5e7eb;
+  --primary:#4f46e5; --primary-light:#eef2ff; --primary-dark:#3730a3;
+  --teal:#0891b2; --teal-light:#ecfeff;
+  --amber:#d97706; --amber-light:#fffbeb;
+  --rose:#e11d48; --rose-light:#fff1f2;
+  --emerald:#059669; --emerald-light:#ecfdf5;
+  --paper:#ffffff; --paper-bg:#f3f4f6;
+  --radius:14px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.85;overflow-x:hidden}
-.progress-wrap{position:fixed;top:0;left:0;right:0;height:6px;background:rgba(0,0,0,.06);z-index:9999}
-#progress{height:100%;width:0;background:linear-gradient(90deg,var(--a1),var(--a2),var(--a4),var(--a3));transition:width .08s}
-.hero{position:relative;padding:110px 24px 80px;background:
-  radial-gradient(1100px 600px at 10% -10%, rgba(99,102,241,.18), transparent 60%),
-  radial-gradient(900px 500px at 90% 0%, rgba(6,182,214,.18), transparent 60%),
-  radial-gradient(800px 500px at 50% 120%, rgba(236,72,153,.12), transparent 60%),
-  linear-gradient(180deg,#f8f8ff 0%,#fff 100%)}
-.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2}
-.badge{display:inline-flex;gap:8px;align-items:center;background:#111;color:#fff;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
-.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
-.hero h1{font-family:'Merriweather',serif;font-size:clamp(34px,5vw,60px);line-height:1.02;margin:20px 0 16px;letter-spacing:-.02em;font-weight:900}
-.lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:720px}
-.container{max-width:860px;margin:0 auto;padding:0 24px 60px}
-.toc{display:flex;flex-wrap:wrap;gap:10px;max-width:1100px;margin:-36px auto 46px;background:#fafafb;border:1px solid var(--line);border-radius:16px;padding:18px;position:relative;z-index:3}
-.toc a{text-decoration:none;color:#111;font-weight:600;font-size:13.5px;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);transition:.2s}
-.toc a:hover{border-color:var(--a1);color:var(--a1)}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 32px;margin:36px 0;box-shadow:0 10px 32px rgba(0,0,0,.04);position:relative;overflow:hidden}
-.card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--a1),var(--a2))}
-.card.c2::before{background:linear-gradient(90deg,var(--a2),var(--a5))}
-.card.c3::before{background:linear-gradient(90deg,var(--a3),var(--a4))}
-.card.c4::before{background:linear-gradient(90deg,var(--a4),var(--a1))}
-.card.c5::before{background:linear-gradient(90deg,var(--a5),var(--a2))}
-.card.c6::before{background:linear-gradient(90deg,var(--a1),var(--a3))}
-h2{font-family:'Merriweather',serif;font-size:clamp(26px,3.2vw,36px);line-height:1.18;margin:0 0 10px;letter-spacing:-.01em}
-h3{font-size:19px;font-weight:800;margin:32px 0 12px;color:#111;letter-spacing:-.01em}
-h4{font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--a1);margin:28px 0 10px}
-p{margin:0 0 16px;font-size:16.6px;color:#191922}
-ul,ol{margin:0 0 18px 18px}
-li{margin:6px 0}
-.divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:34px 0;position:relative}
-.divider::after{content:"• • •";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:0 12px;color:#bbb;font-size:11px;letter-spacing:.3em}
-.highlight{background:linear-gradient(180deg,rgba(99,102,241,.08),rgba(99,102,241,.02));border-left:4px solid var(--a1);padding:16px 18px;border-radius:0 12px 12px 0;margin:22px 0;font-weight:500}
-.quote{font-family:'Merriweather',serif;font-size:18.5px;font-style:italic;color:#2e2e3a;border-left:3px solid #e5e5ea;padding-left:18px;margin:20px 0}
-.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0}
-.flow span{background:#111;color:#fff;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:600}
-.flow .arrow{color:#999;font-weight:800;background:none}
-.toolgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
-.toolgrid div{background:#f7f7f9;border:1px solid var(--line);padding:12px 14px;border-radius:12px;font-weight:600;font-size:14px}
-@media(max-width:720px){.toolgrid{grid-template-columns:1fr}.card{padding:26px 20px}}
-.footer{text-align:center;color:#9a9aab;padding:50px 20px;font-size:13px}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper-bg);line-height:1.75}
+
+/* PDF Document Shell */
+.pdf-wrapper{max-width:900px;margin:40px auto;padding:0 20px}
+.pdf-page{background:var(--paper);border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,.07), 0 1px 3px rgba(0,0,0,.05);overflow:hidden;border:1px solid #e5e7eb}
+
+/* PDF Header Bar */
+.pdf-topbar{height:10px;background:linear-gradient(90deg,#4f46e5 0%,#06b6d4 25%,#f59e0b 50%,#ec4899 75%,#10b981 100%)}
+.pdf-header{display:flex;justify-content:space-between;align-items:center;padding:18px 32px;border-bottom:1px solid var(--line);background:#fcfcff}
+.pdf-header-left{display:flex;align-items:center;gap:12px}
+.pdf-logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#4f46e5,#06b6d4);display:grid;place-items:center;color:#fff;font-weight:800;font-size:16px}
+.pdf-doc-meta{font-size:12.5px;color:var(--muted);line-height:1.3}
+.pdf-doc-meta b{color:var(--ink);font-size:13.5px}
+.pdf-badge{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;padding:6px 12px;border-radius:999px;background:var(--ink);color:#fff;letter-spacing:.04em}
+
+/* Cover / Hero as PDF Cover Page */
+.cover{padding:56px 40px 48px;background:
+  radial-gradient(700px 400px at 15% -10%, rgba(79,70,229,.14), transparent 60%),
+  radial-gradient(600px 350px at 90% 0%, rgba(6,182,214,.12), transparent 60%),
+  radial-gradient(500px 300px at 50% 110%, rgba(236,72,153,.08), transparent 60%),
+  #ffffff;
+  border-bottom:1px solid var(--line)
+}
+.cover-kicker{display:inline-flex;align-items:center;gap:8px;background:var(--primary-light);border:1px solid #c7d2fe;color:var(--primary-dark);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.cover-kicker .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+.cover h1{font-family:'Merriweather',serif;font-size:clamp(32px,4.5vw,48px);line-height:1.06;margin:22px 0 14px;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
+.cover h1 span{ background:linear-gradient(90deg,#4f46e5,#06b6d4);-webkit-background-clip:text;background-clip:text;color:transparent }
+.lead{font-size:17px;color:var(--muted);max-width:620px;line-height:1.6}
+.cover-stats{display:flex;gap:18px;margin-top:28px;flex-wrap:wrap}
+.cover-stat{background:#f9fafb;border:1px solid var(--line);border-radius:10px;padding:12px 16px;min-width:140px}
+.cover-stat b{display:block;font-size:20px;line-height:1;font-weight:800;color:var(--primary)}
+.cover-stat span{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+
+/* TOC as PDF index */
+.toc-wrap{padding:28px 40px;background:#fafafb;border-bottom:1px solid var(--line)}
+.toc-title{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.toc-title::before{content:"";width:18px;height:3px;background:var(--primary);border-radius:2px}
+.toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:680px){.toc-grid{grid-template-columns:1fr}}
+.toc-item{display:flex;align-items:center;gap:10px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 14px;transition:.2s}
+.toc-item:hover{border-color:#c7d2fe;background:var(--primary-light);transform:translateY(-1px)}
+.toc-num{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:800;color:#fff;flex:none}
+.toc-item:nth-child(1) .toc-num{background:#4f46e5} .toc-item:nth-child(2) .toc-num{background:#0891b2}
+.toc-item:nth-child(3) .toc-num{background:#d97706} .toc-item:nth-child(4) .toc-num{background:#e11d48}
+.toc-item:nth-child(5) .toc-num{background:#059669} .toc-item:nth-child(6) .toc-num{background:#7c3aed}
+.toc-item:nth-child(7) .toc-num{background:#db2777} .toc-item:nth-child(8) .toc-num{background:#ea580c}
+.toc-item:nth-child(9) .toc-num{background:#0e7490} .toc-item:nth-child(10) .toc-num{background:#1e293b}
+.toc-label{font-size:13.5px;font-weight:600;color:var(--ink)}
+
+/* Content */
+.content{padding:10px 40px 40px}
+@media(max-width:680px){.cover,.toc-wrap,.content,.pdf-header{padding-left:22px;padding-right:22px}}
+
+/* PDF Section Cards */
+.sec{margin:32px 0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative}
+.sec-header{padding:22px 26px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f3f4f6}
+.sec-tag{font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.sec-number{font-family:'Merriweather',serif;font-weight:900;font-size:13px;color:var(--muted)}
+.sec-body{padding:26px 28px}
+.sec-body p{margin:0 0 14px;font-size:15.8px;color:#2a2a3a}
+.sec h2{font-family:'Merriweather',serif;font-size:24px;line-height:1.25;margin:0;letter-spacing:-.01em;color:var(--ink)}
+.sec h3{font-size:16.5px;font-weight:800;margin:24px 0 10px;color:var(--ink)}
+
+/* Color themes per section */
+.sec.s1{border-left:4px solid #4f46e5} .s1 .sec-tag{background:#eef2ff;color:#4338ca}
+.sec.s2{border-left:4px solid #0891b2} .s2 .sec-tag{background:#ecfeff;color:#0e7490}
+.sec.s3{border-left:4px solid #d97706} .s3 .sec-tag{background:#fffbeb;color:#b45309}
+.sec.s4{border-left:4px solid #e11d48} .s4 .sec-tag{background:#fff1f2;color:#be123c}
+.sec.s5{border-left:4px solid #059669} .s5 .sec-tag{background:#ecfdf5;color:#047857}
+.sec.s6{border-left:4px solid #7c3aed} .s6 .sec-tag{background:#f5f3ff;color:#6d28d9}
+.sec.s7{border-left:4px solid #db2777} .s7 .sec-tag{background:#fdf2f8;color:#be185d}
+.sec.s8{border-left:4px solid #ea580c} .s8 .sec-tag{background:#fff7ed;color:#c2410c}
+.sec.s9{border-left:4px solid #0e7490} .s9 .sec-tag{background:#ecfeff;color:#155e75}
+.sec.s10{border-left:4px solid #1e293b} .s10 .sec-tag{background:#f1f5f9;color:#0f172a}
+
+/* PDF Elements */
+.divider{height:1px;background:linear-gradient(90deg,transparent,#e5e7eb,transparent);margin:20px 0;position:relative}
+.divider::after{content:"•••";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:0 10px;color:#cbd5e1;font-size:10px;letter-spacing:.2em}
+.callout{border-radius:10px;padding:16px 18px;margin:18px 0;font-size:14.8px;font-weight:500;line-height:1.6}
+.callout.primary{background:linear-gradient(180deg,#eef2ff,#f5f3ff);border:1px solid #c7d2fe;border-left:4px solid #4f46e5}
+.callout.teal{background:#ecfeff;border:1px solid #a5f3fc;border-left:4px solid #0891b2}
+.callout.amber{background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #d97706}
+.callout.rose{background:#fff1f2;border:1px solid #fecdd3;border-left:4px solid #e11d48}
+.callout.emerald{background:#ecfdf5;border:1px solid #a7f3d0;border-left:4px solid #059669}
+.quote-pdf{font-family:'Merriweather',serif;font-size:17px;font-style:italic;color:#1e293b;background:#f8fafc;border-left:3px solid #94a3b8;padding:14px 18px;border-radius:0 10px 10px 0;margin:18px 0}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0}
+.flow span{background:var(--ink);color:#fff;padding:7px 12px;border-radius:999px;font-size:12.5px;font-weight:600}
+.flow .arrow{background:none;color:#94a3b8;padding:0 2px}
+.info-box{background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:20px 22px;margin:20px 0;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.info-box h3{margin-top:0;color:var(--primary)}
+.toolgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.toolgrid div{background:#f9fafb;border:1px solid var(--line);padding:11px 13px;border-radius:10px;font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:8px}
+.toolgrid div::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--primary);flex:none}
+@media(max-width:680px){.toolgrid{grid-template-columns:1fr}}
+
+/* Checklist */
+.check-grid{display:grid;gap:9px;margin:16px 0}
+.check-item{display:flex;gap:11px;align-items:center;background:#f9fafb;border:1px solid #e5e7eb;padding:11px 13px;border-radius:10px;font-weight:600;font-size:14px}
+.check-item input{width:18px;height:18px;accent-color:#4f46e5}
+
+/* Footer */
+.pdf-footer{text-align:center;padding:28px;border-top:1px solid var(--line);background:#fcfcff;color:#9ca3af;font-size:12px}
+.pdf-footer b{color:#6b7280}
+
+/* Print */
+@media print{
+ body{background:#fff} .pdf-wrapper{margin:0;max-width:none;padding:0}
+ .pdf-page{box-shadow:none;border:none;border-radius:0}
+ .pdf-topbar{display:none}
+}
+.progress-wrap{position:fixed;top:0;left:0;right:0;height:4px;background:rgba(0,0,0,.06);z-index:9999}
+#progress{height:100%;width:0;background:linear-gradient(90deg,#4f46e5,#06b6d4,#f59e0b,#ec4899);transition:width .08s}
 </style>
 </head>
 <body>
 <div class="progress-wrap"><div id="progress"></div></div>
-<section class="hero">
-  <div class="hero-inner">
-    <div class="badge"><span class="dot"></span> Complete Guide • Digital Products India</div>
-    <h1>What Are Digital Products?<br/>Create Once, Sell Forever.</h1>
-    <p class="lead">Well-organized, black-on-white guide with divider lines, progress bar, and soft colourful graphics — now with 100% of your original content preserved.</p>
+<div class="pdf-wrapper">
+<div class="pdf-page">
+<div class="pdf-topbar"></div>
+<div class="pdf-header">
+  <div class="pdf-header-left">
+    <div class="pdf-logo">DP</div>
+    <div class="pdf-doc-meta"><b>Digital Products India</b><br>Complete Guide • PDF Edition • 2026</div>
+  </div>
+  <div class="pdf-badge">CONFIDENTIAL GUIDE</div>
+</div>
+
+<section class="cover">
+  <div class="cover-kicker"><span class="dot"></span> 10 Chapters • Actionable • Beginner Friendly</div>
+  <h1>What Are <span>Digital Products?</span><br/>Create Once, Sell Forever.</h1>
+  <p class="lead">A clean, PDF-style, print-ready guide with professional colours, divider lines, and structured layouts — 100% of your original content preserved and enhanced.</p>
+  <div class="cover-stats">
+    <div class="cover-stat"><b>10</b><span>Chapters</span></div>
+    <div class="cover-stat"><b>100%</b><span>Practical</span></div>
+    <div class="cover-stat"><b>₹0 Start</b><span>Investment</span></div>
+    <div class="cover-stat"><b>∞</b><span>Scalable</span></div>
   </div>
 </section>
 
-<div class="container"><nav class="toc">
-  <a href="#sec1">What Are Digital Products?</a>
-  <a href="#sec2">What Product to Create?</a>
-  <a href="#sec3">How to Create?</a>
-  <a href="#sec4">Landing Page</a>
-  <a href="#sec5">Payment System</a>
-  <a href="#sec6">How to Market?</a>
-  <a href="#sec7">Final Step</a>
-  <a href="#sec8">Action Checklist</a>
-  <a href="#sec9">One Last Thing</a>
-  <a href="#sec10">Thank You</a>
-</nav></div>
+<div class="toc-wrap">
+  <div class="toc-title">Table of Contents</div>
+  <div class="toc-grid">
+    <a class="toc-item" href="#sec1"><span class="toc-num">01</span><span class="toc-label">What Are Digital Products?</span></a>
+    <a class="toc-item" href="#sec2"><span class="toc-num">02</span><span class="toc-label">What Product to Create?</span></a>
+    <a class="toc-item" href="#sec3"><span class="toc-num">03</span><span class="toc-label">How to Create?</span></a>
+    <a class="toc-item" href="#sec4"><span class="toc-num">04</span><span class="toc-label">Landing Page Blueprint</span></a>
+    <a class="toc-item" href="#sec5"><span class="toc-num">05</span><span class="toc-label">Payment System Setup</span></a>
+    <a class="toc-item" href="#sec6"><span class="toc-num">06</span><span class="toc-label">How to Market?</span></a>
+    <a class="toc-item" href="#sec7"><span class="toc-num">07</span><span class="toc-label">Final Step: Delivery</span></a>
+    <a class="toc-item" href="#sec8"><span class="toc-num">08</span><span class="toc-label">Action Checklist</span></a>
+    <a class="toc-item" href="#sec9"><span class="toc-num">09</span><span class="toc-label">One Last Thing</span></a>
+    <a class="toc-item" href="#sec10"><span class="toc-num">10</span><span class="toc-label">Thank You & Next Steps</span></a>
+  </div>
+</div>
 
-<div class="container">
+<div class="content">
 
-<section id="sec1" class="card">
-<h2># 1. What Are Digital Products?</h2>
+<section id="sec1" class="sec s1">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 01 • FOUNDATION</div>
+      <h2 style="margin-top:8px">What Are Digital Products?</h2>
+    </div>
+    <div class="sec-number">#01</div>
+  </div>
+  <div class="sec-body">
+    
+
 <div class="divider"></div>
 <p>Imagine you walk into a bookstore.</p>
 <p>You find a book you've been wanting to read for a long time. You pick it up, look at the cover, flip through a few pages, and decide to buy it.</p>
@@ -114,7 +217,7 @@ li{margin:6px 0}
 <p>You don't need a bookshelf.</p>
 <p>You don't need a warehouse to store it.</p>
 <p>You simply make the payment, receive the digital file, and start reading.</p>
-<div class="highlight"><strong>That is a simple example of a digital product.</strong><br>A digital product is something that is <strong>created, stored, sold, delivered, and consumed digitally</strong>. It doesn't have a physical form that needs to be manufactured, packaged, or shipped.</div>
+<div class="callout primary"><strong>That is a simple example of a digital product.</strong><br>A digital product is something that is <strong>created, stored, sold, delivered, and consumed digitally</strong>. It doesn't have a physical form that needs to be manufactured, packaged, or shipped.</div>
 <p>And books are just the beginning.</p>
 <p>You could create an <strong>eBook</strong>, an online course, a Canva template, a business spreadsheet, a Notion template, a collection of AI prompts, a digital design, or even software.</p>
 <p>The interesting part is this:</p>
@@ -127,11 +230,22 @@ li{margin:6px 0}
 <p>No delivery truck.</p>
 <p>Just <strong>create it once and sell it digitally again and again.</strong></p>
 <p>And that's what makes digital products such an interesting business model.</p>
-<div class="quote">You are not simply selling a file. You're creating something that provides information, knowledge, convenience, entertainment, or a solution to a problem — and delivering that value digitally.</div>
+<div class="quote-pdf">You are not simply selling a file. You're creating something that provides information, knowledge, convenience, entertainment, or a solution to a problem — and delivering that value digitally.</div>
+
+  </div>
 </section>
 
-<section id="sec2" class="card c2">
-<h2># 2. What Product to Create?</h2>
+<section id="sec2" class="sec s2">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 02 • IDEATION</div>
+      <h2 style="margin-top:8px">What Product Should You Create?</h2>
+    </div>
+    <div class="sec-number">#02</div>
+  </div>
+  <div class="sec-body">
+    
+
 <h3>Don't Create a Product. Package What You Already Know.</h3>
 <div class="divider"></div>
 <p>Imagine you have a friend who makes really good biryani.</p>
@@ -208,11 +322,22 @@ li{margin:6px 0}
 <p>Instead, ask:</p>
 <p><strong>"What do I know, and what useful result can I help someone achieve with it?"</strong></p>
 <p>Once you find that answer, you have the raw material for your digital product.</p>
-<div class="highlight"><strong>Your knowledge is the raw material.<br>Your title communicates the promise.<br>Your product is how you package it.<br>The result is what makes it valuable.</strong></div>
+<div class="callout primary"><strong>Your knowledge is the raw material.<br>Your title communicates the promise.<br>Your product is how you package it.<br>The result is what makes it valuable.</strong></div>
+
+  </div>
 </section>
 
-<section id="sec3" class="card c3">
-<h2># 3. How to Create?</h2>
+<section id="sec3" class="sec s3">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 03 • CREATION</div>
+      <h2 style="margin-top:8px">How to Create Your Product?</h2>
+    </div>
+    <div class="sec-number">#03</div>
+  </div>
+  <div class="sec-body">
+    
+
 <h3>Which Tools to Use?</h3>
 <div class="divider"></div>
 <p>Imagine you finally know what you want to create.</p>
@@ -251,11 +376,22 @@ li{margin:6px 0}
 <p>You only need to learn the tools required to build <strong>your particular product</strong>.</p>
 <p>And as you become better at creating digital products, you'll discover something interesting:</p>
 <p>The tool is not the product.</p>
-<div class="quote"><strong>Your knowledge, solution, and creativity are the product.</strong> The tools are simply what help you <strong>turn what's inside your head into something people can actually use.</strong></div>
+<div class="quote-pdf"><strong>Your knowledge, solution, and creativity are the product.</strong> The tools are simply what help you <strong>turn what's inside your head into something people can actually use.</strong></div>
+
+  </div>
 </section>
 
-<section id="sec4" class="card c4">
-<h2># 4. You Need a Landing Page</h2>
+<section id="sec4" class="sec s4">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 04 • LANDING PAGE</div>
+      <h2 style="margin-top:8px">Landing Page Blueprint</h2>
+    </div>
+    <div class="sec-number">#04</div>
+  </div>
+  <div class="sec-body">
+    
+
 <h3>Your Digital Product Needs a Place to Sell.</h3>
 <div class="divider"></div>
 <p>Imagine you've created your digital product.</p>
@@ -319,11 +455,22 @@ li{margin:6px 0}
 <p>The customer understands the value.</p>
 <p>They make the payment.</p>
 <p>And they receive the product.</p>
-<div class="highlight"><strong>You can create a landing page by using chatgpt or any other AI Tools. Simple type I need a webpage of .html format with the details that you need in your landing page</strong></div>
+<div class="callout primary"><strong>You can create a landing page by using chatgpt or any other AI Tools. Simple type I need a webpage of .html format with the details that you need in your landing page</strong></div>
+
+  </div>
 </section>
 
-<section id="sec5" class="card c5">
-<h2># 5. Payment System</h2>
+<section id="sec5" class="sec s5">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 05 • PAYMENTS</div>
+      <h2 style="margin-top:8px">Payment System</h2>
+    </div>
+    <div class="sec-number">#05</div>
+  </div>
+  <div class="sec-body">
+    
+
 <h3>How Will Your Customer Pay You?</h3>
 <div class="divider"></div>
 <p>Imagine someone visits your landing page.</p>
@@ -362,11 +509,22 @@ li{margin:6px 0}
 <p><strong>"I want the product."</strong></p>
 <p>Your payment system should make the next step:</p>
 <p><strong>"Here is how you can get it."</strong></p>
-<div class="highlight"><strong>Your landing page creates the desire.<br>Your payment system completes the transaction.<br>Your delivery system delivers the value.</strong></div>
+<div class="callout primary"><strong>Your landing page creates the desire.<br>Your payment system completes the transaction.<br>Your delivery system delivers the value.</strong></div>
+
+  </div>
 </section>
 
-<section id="sec6" class="card c6">
-<h2># 6. How to Market Your Product?</h2>
+<section id="sec6" class="sec s6">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 06 • MARKETING</div>
+      <h2 style="margin-top:8px">How to Market?</h2>
+    </div>
+    <div class="sec-number">#06</div>
+  </div>
+  <div class="sec-body">
+    
+
 <h3>Create Attention Before You Ask for a Sale.</h3>
 <div class="divider"></div>
 <p>Imagine you have created an amazing digital product.</p>
@@ -503,15 +661,25 @@ li{margin:6px 0}
 <p>Because people don't wake up wanting to buy your PDF.</p>
 <p>They wake up wanting to <strong>solve a problem.</strong></p>
 <p>Your job is to show them that you have a solution.</p>
-<div class="highlight"><strong>Content gets attention.<br>Value builds trust.<br>Your product provides the solution.<br>Marketing connects the three.</strong></div>
+<div class="callout primary"><strong>Content gets attention.<br>Value builds trust.<br>Your product provides the solution.<br>Marketing connects the three.</strong></div>
+
+  </div>
 </section>
 
+<section id="sec7" class="sec s7">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 07 • LAUNCH</div>
+      <h2 style="margin-top:8px">The Final Step</h2>
+    </div>
+    <div class="sec-number">#07</div>
+  </div>
+  <div class="sec-body">
+    
 
-<section id="sec7" class="card c2" style="background:linear-gradient(180deg,#ffffff 0%, #f8f8ff 100%)">
-<h2># 7. The Final Step: Start Creating</h2>
 <div class="divider"></div>
 <p>By now, you understand the basic digital product system:</p>
-<div class="highlight" style="font-size:18px; letter-spacing:.01em; border-left-color:#10b981; background:linear-gradient(180deg, rgba(16,185,129,.12), rgba(16,185,129,.03))">
+<div class="callout primary" style="font-size:18px; letter-spacing:.01em; border-left-color:#10b981; background:linear-gradient(180deg, rgba(16,185,129,.12), rgba(16,185,129,.03))">
 <strong>Knowledge → Problem → Product → Landing Page → Payment → Delivery → Marketing → Customer</strong>
 </div>
 <p>You don't need a huge audience, expensive equipment, or a revolutionary idea.</p>
@@ -525,11 +693,22 @@ li{margin:6px 0}
 <li>Repeat.</li>
 </ul>
 <p>Your first goal isn't to build a huge business.</p>
-<div class="quote"><strong>Your first goal is to create something useful and get it into the hands of someone who needs it.</strong></div>
+<div class="quote-pdf"><strong>Your first goal is to create something useful and get it into the hands of someone who needs it.</strong></div>
+
+  </div>
 </section>
 
-<section id="sec8" class="card c3">
-<h2># 8. Your Action Checklist</h2>
+<section id="sec8" class="sec s8">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 08 • CHECKLIST</div>
+      <h2 style="margin-top:8px">Your Action Checklist</h2>
+    </div>
+    <div class="sec-number">#08</div>
+  </div>
+  <div class="sec-body">
+    
+
 <div class="divider"></div>
 <p>Before you launch, make sure you have:</p>
 <div style="display:grid; grid-template-columns:1fr; gap:10px; margin:20px 0">
@@ -546,11 +725,22 @@ li{margin:6px 0}
 <p>Then:</p>
 <h3 style="text-align:center; background:#111; color:#fff; padding:14px; border-radius:12px; letter-spacing:.02em">Create → Launch → Learn → Improve → Repeat</h3>
 <p>Don't spend months trying to make everything perfect.</p>
-<div class="highlight"><strong>Start small. Learn from real people. Build better with every version.</strong></div>
+<div class="callout primary"><strong>Start small. Learn from real people. Build better with every version.</strong></div>
+
+  </div>
 </section>
 
-<section id="sec9" class="card c4">
-<h2># 9. One Last Thing</h2>
+<section id="sec9" class="sec s9">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 09 • MINDSET</div>
+      <h2 style="margin-top:8px">One Last Thing</h2>
+    </div>
+    <div class="sec-number">#09</div>
+  </div>
+  <div class="sec-body">
+    
+
 <div class="divider"></div>
 <p>You may think you need more knowledge before you begin.</p>
 <p>Maybe you need another course.</p>
@@ -563,15 +753,26 @@ li{margin:6px 0}
 <p>Your product is the solution.</p>
 <p>Your marketing brings attention.</p>
 <p>And your customers teach you what to improve.</p>
-<div class="highlight">
+<div class="callout primary">
 <strong>Don't just consume information.</strong><br>
 <strong>Turn what you know into something useful.</strong>
 </div>
 <h3 style="font-size:24px; text-align:center; margin-top:30px">Your digital product journey starts now.</h3>
+
+  </div>
 </section>
 
-<section id="sec10" class="card" style="text-align:center; background: radial-gradient(800px 400px at 50% 0%, rgba(99,102,241,.12), transparent 60%), #ffffff">
-<h2># 10. Thank You</h2>
+<section id="sec10" class="sec s10">
+  <div class="sec-header">
+    <div>
+      <div class="sec-tag">CHAPTER 10 • CLOSING</div>
+      <h2 style="margin-top:8px">Thank You</h2>
+    </div>
+    <div class="sec-number">#10</div>
+  </div>
+  <div class="sec-body">
+    
+
 <div class="divider"></div>
 <p>Thank you for taking the time to read this guide.</p>
 <p>I hope you don't finish it with just more information.</p>
@@ -588,27 +789,29 @@ li{margin:6px 0}
 </div>
 <h3 style="font-size:28px; font-family:'Merriweather',serif">Now go create something.</h3>
 <div style="margin-top:18px; font-size:42px">🚀 ✨ 📚</div>
+
+  </div>
 </section>
 
 </div>
-
-<div class="footer">Complete Guide • All original chapters preserved • Black text, white background, divider lines, progress bar & colourful soft graphics</div>
+<div class="pdf-footer"><b>Digital Products India</b> • PDF Edition • All 10 Chapters Preserved • Designed for Print & Digital • Page 1 of 1 • 2026</div>
+</div>
+</div>
 
 <script>
 window.addEventListener('scroll', ()=>{
   const s=document.documentElement.scrollTop;
   const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
-  document.getElementById('progress').style.width=(s/h*100)+'%';
+  const el=document.getElementById('progress');
+  if(el) el.style.width=(s/h*100)+'%';
 });
 </script>
 
 <style>
-.pdf-download-btn{position:fixed;right:22px;bottom:22px;z-index:9999;display:flex;align-items:center;gap:8px;padding:12px 16px;border:0;border-radius:999px;background:#111;color:#fff;font:600 14px/1.2 Arial,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.18);cursor:pointer;text-decoration:none}.pdf-download-btn svg{width:16px;height:16px;flex:none}.pdf-download-btn:hover{transform:translateY(-1px)}
-@media(max-width:600px){.pdf-download-btn{right:14px;bottom:14px;padding:11px 14px}}
+.pdf-download-btn{position:fixed;right:22px;bottom:22px;z-index:9999;display:flex;align-items:center;gap:8px;padding:12px 18px;border:0;border-radius:999px;background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;font:700 13px/1.2 Inter,sans-serif;box-shadow:0 8px 24px rgba(79,70,229,.35);cursor:pointer;text-decoration:none;transition:.2s}
+.pdf-download-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(79,70,229,.45)}
+@media(max-width:600px){.pdf-download-btn{right:14px;bottom:14px}}
 </style>
-<a href="#" class="pdf-download-btn" id="downloadPdfBtn" aria-label="Download PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg><span>Download PDF</span></a>
-<script>
-document.getElementById('downloadPdfBtn').addEventListener('click', function(e){e.preventDefault(); window.print();});
-</script>
+
 </body>
 </html>
